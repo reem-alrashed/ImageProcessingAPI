@@ -1,4 +1,4 @@
-import { Router, Request, Response, NextFunction } from 'express';
+import { Router, Request, Response } from 'express';
 import path from 'path';
 
 import {
@@ -18,15 +18,15 @@ export const ResizeController: Router = Router();
 
 ResizeController.get(
   '/resize',
-  async (req: Request, res: Response, next: NextFunction) => {
+  async (req: Request, res: Response) => {
     const { h, w } = req.query;
     const width: number | null = w ? parseInt(w as string, 10) : null;
     const height: number | null = h ? parseInt(h as string, 10) : null;
 
     const { inputPath, outputPath }: imageDirsTypes = imagesPath(__dirname);
 
-    let noParameters: boolean = false;
-    let noImagesError: boolean = false;
+    let noParameters = false;
+    let noImagesError = false;
     let finalOutputFiles: string[] = [];
 
     if (width === null && height === null) {
@@ -37,7 +37,7 @@ ResizeController.get(
       if (unResized.length > 0) {
         // resizing goes here
         try {
-          const format: string = 'jpeg';
+          const format = 'jpeg';
 
           for (const file of unResized) {
             const inputImage: string = path.join(inputPath, file);

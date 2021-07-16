@@ -13,8 +13,8 @@ export default function resize(
       const readStream: fs.ReadStream = fs.createReadStream(inputPath);
       const writeStream: fs.WriteStream = fs.createWriteStream(outputPath);
 
-      writeStream.on('error', () => console.log('Error'));
-      writeStream.on('close', () => console.log('Successfully saved'));
+      writeStream.on('error', () => console.log('Error!'));
+      writeStream.on('close', () => console.log('Image saved'));
 
       let transform: sharp.Sharp = sharp();
       if (format === 'jpeg' || format === 'png') {
@@ -23,7 +23,7 @@ export default function resize(
 
       transform = transform
         .resize(width, height)
-        .on('info', (fileInfo) => console.log('Successfully resized'));
+        .on('info', () => console.log('Image Resized..'));
 
       readStream.pipe(transform).pipe(writeStream);
       resolve('slow');

@@ -5,7 +5,7 @@ export const finalImages = (
   height: number | null,
   outputPath: string
 ): string[] => {
-  const subStringToTarget: string = `_${width}_${height}`;
+  const subStringToTarget = `_${width}_${height}`;
   const outputFiles: string[] = fs.readdirSync(outputPath);
 
   return outputFiles.filter(
