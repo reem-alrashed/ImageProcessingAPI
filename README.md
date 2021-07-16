@@ -46,12 +46,13 @@ This project has two endpoint.
 General: Views all images without chanding their sizes.   
 
 
-HTTP method: GET
-Sample request:
+HTTP method: GET. 
+
+#### Sample request:
 ```
 http://localhost:3000/
 ```
-Sample response: 
+#### Sample response: 
 
 <img width="1440" alt="Screen Shot 2021-07-16 at 11 41 21 PM" src="https://user-images.githubusercontent.com/68843028/126006345-d7a96a6a-4720-45a5-8026-2a5f344cd58f.png">
 
@@ -59,12 +60,12 @@ Sample response:
 ### Resize endpoint
 General:  Changes the size of the images depending on the input. 
 
-Sample request: 
+#### Sample request: 
 ```
 http://localhost:3000/resize?w=500&h=400
 ```  
 
-Sample response:  
+#### Sample response:  
 <img width="1440" alt="Screen Shot 2021-07-16 at 11 41 13 PM" src="https://user-images.githubusercontent.com/68843028/126006349-a387bf82-2002-4963-b3b9-8dc4416cdb35.png">
 ## Middlewares
 
