@@ -46,7 +46,6 @@ Sample request:
 ```
 http://localhost:3000/
 ```
-Sample response: 
 
 ### Resize endpoint
 General:  Changes the size of the images depending on the input. 
@@ -55,7 +54,6 @@ Sample request:
 ```
 http://localhost:3000/resize?w=500&h=400
 ```  
-Sample response: 
 
 ## Middlewares
 
