@@ -46,7 +46,6 @@ Sample request:
 ```
 http://localhost:3000/
 ```
-Sample response: 
 
 ### Resize endpoint
 General:  Changes the size of the images depending on the input. 
@@ -55,7 +54,6 @@ Sample request:
 ```
 http://localhost:3000/resize?w=500&h=400
 ```  
-Sample response: 
 
 ## Middlewares
 
@@ -72,3 +70,9 @@ The website can deal with these types of errors:
 3. No Parameter provided to resize.
 
 ## Resources
+
+[Node.js Documentation](https://nodejs.org/docs/latest-v12.x/api/). 
+
+[Express Documentation](https://expressjs.com/en/5x/api.html). 
+
+[Resize API](https://sharp.pixelplumbing.com/api-resize)
