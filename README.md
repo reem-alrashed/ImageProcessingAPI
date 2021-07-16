@@ -70,3 +70,9 @@ The website can deal with these types of errors:
 3. No Parameter provided to resize.
 
 ## Resources
+
+[Node.js Documentation](https://nodejs.org/docs/latest-v12.x/api/). 
+
+[Express Documentation](https://expressjs.com/en/5x/api.html). 
+
+[Resize API](https://sharp.pixelplumbing.com/api-resize)
