@@ -86,10 +86,10 @@ The website can deal with these types of errors:
 2. No images to resize.
 3. No Parameter provided to resize.
 
-## Resources
+## References
 
-[Node.js Documentation](https://nodejs.org/docs/latest-v12.x/api/). 
+1. [Node.js Documentation](https://nodejs.org/docs/latest-v12.x/api/). 
 
-[Express Documentation](https://expressjs.com/en/5x/api.html). 
+2. [Express Documentation](https://expressjs.com/en/5x/api.html). 
 
-[Resize API](https://sharp.pixelplumbing.com/api-resize).
+3. [Resize API](https://sharp.pixelplumbing.com/api-resize).
