@@ -1,0 +1,11 @@
+node_modules/
+build/Release
+logs
+src/public/images/thumbnails
+node_modules/
+.npm
+.env
+.next
+dist
+.cache/
+.bin

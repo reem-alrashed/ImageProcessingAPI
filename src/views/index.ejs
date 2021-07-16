@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Image processing API - Home</title>
+    <link rel="stylesheet" href="public/main.css">
+  </head>
+<body>
+  <div class="topnav">
+    <div class="header">Image Processing API</div>
+    <a href="/">Home Page</a>
+    <a href="/resize?w=400&h=400"> Resized images 400*400</a>
+  </div>
+  <% if ( data.length > 0 ) { %>
+    <div id="image-container">
+      <% data.forEach((img) => { %>
+        <img class='resized-image' src="public/images/full/<%= img %>">
+      <% }); %>
+    </div>
+  <% } else { %>
+    <div class='noParameters'>
+      <h3>Sorry!</h3>
+      <p>There is no image to display at this moment</p>
+      <p>Provide a url as seen below, you might get lucky that an image was already 
+        resized base on the height and width you will provide
+      </p>
+    </div>
+    
+  <% } %>
+  <div class="footer">
+    © Copyright 2021. All rights reserved.
+  </div>
+</body>
+</html>

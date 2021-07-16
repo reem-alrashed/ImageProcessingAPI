@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reem - Image processing API</title>
+    <link rel="stylesheet" href="public/main.css">
+  </head>
+<body>
+  <div class="topnav">
+    <div class="header">Image Processing API</div>
+    <a href="/">Home Page</a>
+    <a href="/resize?w=400&h=400"> Resized images 400*400</a>
+  </div>
+  <% if ( noImagesError ) { %>
+    <div class='noParameters'>
+      <p>No image to resize </p>
+    </div>
+  <% } else if ( noParameters ) { %>
+    <div class='noParameters'>
+      <h3>Apologies.. You must provide a parameters to resize!</h3>
+    </div>
+  <% } else { %>
+    <div class='info'>
+      <h2 class=''>Provided sizes:</h2>
+      <% if ( width && height ) { %>
+        <div><span class='provided-parameters'>Width</span>: <%= width %>, 
+        <span class='provided-parameters'>Height</span>: <%= height %></div>
+      <% } else if (width) { %>
+        <div><span class='provided-parameters'>Width</span>: <%= width %></div>
+      <% } else if (height) { %>
+        <div><span class='provided-parameters'>Height</span>: <%= height %></div>
+      <% } %>
+    </div>
+  <% } %>
+  
+  <div id="image-container">
+    <% if ( data.length > 0 ) { %>
+      <% data.forEach((img) => { %>
+        <img class='resized-image' src="public/images/thumbnails/<%= img %>">
+      <% }); %>
+    <% } %>
+  </div>
+  <div class="footer">
+    © Copyright 2021. All rights reserved.
+  </div>
+</body>
+</html>

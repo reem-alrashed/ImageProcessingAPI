@@ -1,0 +1,65 @@
+html {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(236, 232, 225);
+  } 
+  body {
+    display: table-cell; 
+    text-align: center;
+  }
+  .header {
+    text-align: center;
+    padding: 20px;
+    color:#ddd;
+  }
+  .footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+  }
+.topnav {
+    overflow: hidden;
+    background-color: rgb(110, 109, 109);
+    display:inline-flex; 
+    list-style: none;
+    text-align: center; 
+    width: 30%; 
+    vertical-align: middle; 
+    margin: 4px;
+    
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 19px 16px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    text-align: center;
+
+  }
+  .resized-image {
+    margin: 6px;
+  }
+  .provided-parameters {
+    color: rgb(204, 156, 204);
+    text-decoration: bold;
+  }
+  .info {
+    margin-bottom: 2px;
+  }
+  .noParameters > h3 {
+    color: red;
+  }
+  .page-not-found {
+    padding-top: 400px;
+    text-align: center;
+    background-image: url(./images/404.png);
+  }
+
