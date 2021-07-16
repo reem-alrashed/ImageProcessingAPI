@@ -67,6 +67,7 @@ http://localhost:3000/resize?w=500&h=400
 
 #### Sample response:  
 <img width="1440" alt="Screen Shot 2021-07-16 at 11 41 13 PM" src="https://user-images.githubusercontent.com/68843028/126006349-a387bf82-2002-4963-b3b9-8dc4416cdb35.png">
+
 ## Middlewares
 
 ### Page Not Found 
