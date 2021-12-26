@@ -1,5 +1,6 @@
 # Image-Processing-API
-Create an API that takes advantage of all the tools you have learned in this course. You'll create an image processing API that resizes and saves images to user specifications when visiting a URL
+An image processing API that resizes and saves images to user specifications when visiting a URL. 
+
 ## Dependencies 
 
 To install the dependencies for this project, run the following command: 
