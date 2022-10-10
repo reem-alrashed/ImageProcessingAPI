@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@types/morgan": "^1.9.3",
-    "@types/sharp": "^0.28.4",
+    "@types/sharp": "^0.31.0",
     "ejs": "^3.1.7",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
